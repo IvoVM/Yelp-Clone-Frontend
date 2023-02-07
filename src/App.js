@@ -1,21 +1,21 @@
 import "./App.css";
-import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { RestaurantDetailPage, Home, UpdatePage } from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/restaurants/:id/update" component={UpdatePage} />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/"  element={<Home />} />
+          <Route exact path="/restaurants/:id/update" element={<UpdatePage />} />
           <Route
             exact
             path="/restaurants/:id"
-            component={RestaurantDetailPage}
+            element={<RestaurantDetailPage />}
           />
-        </Switch>
-      </Router>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
