@@ -4,7 +4,7 @@ import { RestaurantDetailPage, Home, UpdatePage } from "./routes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <BrowserRouter>
         <Routes>
           <Route exact path="/"  element={<Home />} />
