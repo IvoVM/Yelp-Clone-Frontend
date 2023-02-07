@@ -4,10 +4,10 @@ const AddRestaurant = () => {
       <form >
         <div className="row ">
           <div className="col">
-            <input type="text" className="form-control" />
+            <input type="text" className="form-control" placeholder="Name" />
           </div>
           <div className="col">
-            <input type="text" className="form-control" />
+            <input type="text" className="form-control" placeholder="Location" />
           </div>
           <div className="col">
             <select className="form-select  mr-sm-2">
